@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <HelloWorld />
+    <b-alert show>Default Alert</b-alert>
   </div>
 </template>
 
