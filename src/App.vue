@@ -16,7 +16,7 @@
       </ul>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid m-100">
       <div class="row">
       
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -60,7 +60,7 @@
         
           <HelloWorld />
 
-          <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+          <canvas class="my-4" id="myChart" width="900" height="580"></canvas>
 
           <div class="alert alert-danger" role="alert">
             This is a danger alert—check it out!
@@ -98,7 +98,7 @@ export default {
   margin-top: 0px;
 }
 
-feather-icon {
+.feather {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
@@ -159,7 +159,9 @@ feather-icon {
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
@@ -167,9 +169,7 @@ feather-icon {
 .navbar-text {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  font-size: 3rem;
-  background-color: rgba(0, 0, 0, .25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  font-size: 2rem;
 }
 
 .navbar .form-control {
