@@ -10,7 +10,7 @@
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
             Salir
-            <feather-log-out class:"log-out" />
+            <feather-log-out class="log-out" />
           </button>
         </li>
       </ul>
@@ -100,7 +100,7 @@ export default {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  stroke: #cccc33;
+  stroke: #cccccc;
 }
 
 
@@ -141,7 +141,6 @@ export default {
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
-  color: #999;
 }
 
 .sidebar .nav-link.active {
