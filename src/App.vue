@@ -9,9 +9,7 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
-            <feather-zap-icon stroke-width="5" height="30" width="30" stroke="green" />
-            <feather-activity stroke-width="5" height="30" width="30" stroke="red" />
-            <feather-icon type="log-out" style="width:40px; height:40px; vertical-align:middle; stroke:#ff80c0; color:#ffffff;"></feather-icon>
+            <feather-log-out height="24" width="24" stroke="#5bc0de" />
             Salir
           </button>
         </li>
@@ -27,13 +25,13 @@
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="#">
-                  <feather-icon type="home"></feather-icon>
+                  <feather-home class="feather" />
                   Inicio <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <feather-icon type="file"></feather-icon>
+                  <feather-file class="feather" />
                   Cargar
                 </a>
               </li>
@@ -43,13 +41,13 @@
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <feather-icon type="file-text"></feather-icon>
+                  <feather-file-text class="feather" />
                   2018-12-30
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <feather-icon type="file-text"></feather-icon>
+                  <feather-file-text class="feather" />
                   2018-12-29
                 </a>
               </li>
@@ -98,10 +96,11 @@ export default {
   margin-top: 0px;
 }
 
-feather-icon {
+.feather {
   width: 30px;
   height: 30px;
   vertical-align: text-bottom;
+  stroke: #cccc33;
 }
 
 
