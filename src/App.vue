@@ -10,7 +10,7 @@
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
             Salir
-            <feather-log-out class="log-out" />
+            <feather-log-out class="log-out text-info" />
           </button>
         </li>
       </ul>
@@ -189,7 +189,7 @@ export default {
 .log-out {
   height: 16px;
   width: 16px; 
-  stroke: $theme-color("brand-info");
+  stroke: red;
 
 }
 
