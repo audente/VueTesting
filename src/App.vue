@@ -1,8 +1,8 @@
 
 <template>
   <div id="app">
-    <b-navbar toggleable="md" type="dark" variant="info">
-        <b-navbar-brand href="#">EY</b-navbar-brand>
+    <b-navbar toggleable="md" fixed="top" sticky="true" type="dark" variant="info">
+        <b-navbar-brand>EY</b-navbar-brand>
         <b-nav-text>In<strong>TAX</strong>lligence</b-nav-text>
     
         <b-collapse is-nav id="nav_collapse">
@@ -26,7 +26,7 @@
     
     <b-container class="bv-example-row">
         <b-row>
-            <b-col cols="3" id="sidebar">Sidebar</b-col>
+            <b-col cols="3" class="sidebar">Sidebar</b-col>
             <b-col>
                 <HelloWorld />
                 <b-alert show>Default Alert</b-alert>
@@ -60,7 +60,8 @@ export default {
 }
 
 #sidebar {
-  background-color: lightblue,
+  background-color: lightblue;
+  color: #2c3e50;
 }
 
 </style>
