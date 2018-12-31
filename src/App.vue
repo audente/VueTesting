@@ -9,7 +9,7 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="#">
-            <feather-icon type="log-out" style="width:16px; height:16px; vertical-align:middle; color:#ffcccc"></feather-icon>
+            <feather-icon type="log-out" style="width:24px; height:24px; vertical-align:middle; color:#ffffff"></feather-icon>
             Salir
           </a>
         </li>
