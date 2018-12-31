@@ -187,8 +187,9 @@ export default {
 }
 
 .log-out {
-  height: 16px;
-  width: 16px; 
+  height: 12px;
+  width: 12px;
+  color: #ff0000;
   stroke: #ff0000;
 
 }
