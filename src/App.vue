@@ -16,7 +16,7 @@
       </ul>
     </nav>
 
-    <div class="container-fluid" style="margin:200; padding:200;">
+    <div class="container-fluid" style="margin-top:200; padding-top:200;" id="main-container">
       <div class="row">
       
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -59,9 +59,7 @@
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
         
           <HelloWorld />
-
-          <canvas class="my-4" id="myChart" width="900" height="580"></canvas>
-
+          <hr/>
           <div class="alert alert-danger" role="alert">
             This is a danger alert—check it out!
           </div>
@@ -105,9 +103,9 @@ export default {
 }
 
 
-.body {
-  padding: 200;
-  margin: 200;
+.body, #main-container {
+  padding-top: 200;
+  margin-top: 200;
 }
 
 
