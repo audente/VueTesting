@@ -9,6 +9,8 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
+            <feather-zap-icon stroke-width="5" height="30" width="30" stroke="green" />
+            <feather-activity stroke-width="5" height="30" width="30" stroke="red" />
             <feather-icon type="log-out" style="width:40px; height:40px; vertical-align:middle; stroke:#ff80c0; color:#ffffff;"></feather-icon>
             Salir
           </button>
@@ -103,10 +105,6 @@ feather-icon {
 }
 
 
-.body {
-  padding-top: 200px;
-}
-
 
 /*
  * Sidebar
@@ -121,6 +119,11 @@ feather-icon {
   padding: 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
+
+#main-container, .sidebar {
+  padding-top: 100px;
+}
+
 
 .sidebar-sticky {
   position: -webkit-sticky;
