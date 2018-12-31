@@ -26,7 +26,11 @@
     
     <b-container class="bv-example-row">
         <b-row>
-            <b-col cols="3" class="sidebar">Sidebar</b-col>
+            <b-col cols="3" class="sidebar">
+                <div class="h-100" style="background-color=#44ff66">
+                    Sidebar
+                </div>
+            </b-col>
             <b-col>
                 <HelloWorld />
                 <b-alert show>Default Alert</b-alert>
