@@ -3,8 +3,8 @@
 
   <div id="app">
 
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap m-0 p-50">
-      <h2><a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EY In<strong>TAX</strong>lligence</a></h2>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap m-0 p-0">
+      <h2 class="navbar-brand col-sm-3 col-md-2">EY In<strong>TAX</strong>lligence</h2>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="#">Sign out</a>
