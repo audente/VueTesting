@@ -21,7 +21,7 @@
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="#">
-                  <home></home>
+                  <feather-icon type="home"></feather-icon>
                   Inicio <span class="sr-only">(current)</span>
                 </a>
               </li>

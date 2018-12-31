@@ -4,7 +4,10 @@
 import Vue from "vue";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
-import * as feather from "styled-icons/feather"
+
+
+import VueFeatherIcon from 'vue-feather-icon'
+Vue.use(VueFeatherIcon)
 
 
 Vue.config.productionTip = false;
