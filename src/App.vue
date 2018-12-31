@@ -9,8 +9,7 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
-            Salir &nbsp;
-            <feather-log-out class="logout" />
+            Salir »
           </button>
         </li>
       </ul>
@@ -185,13 +184,5 @@ export default {
   border-width: 0;
   border-radius: 0;
 }
-
-.logout {
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  stroke: #ffffff;
-}
-
 
 </style>
