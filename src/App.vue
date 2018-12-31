@@ -189,7 +189,7 @@ export default {
 .log-out {
   height: 16px;
   width: 16px; 
-  stroke: $brand-info;
+  stroke: $theme-color("brand-info");
 
 }
 
