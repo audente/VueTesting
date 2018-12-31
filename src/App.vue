@@ -9,8 +9,8 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
-            <feather-log-out height="24" width="24" stroke="#5bc0de" />
             Salir
+            <feather-log-out class:"log-out" />
           </button>
         </li>
       </ul>
@@ -97,9 +97,9 @@ export default {
 }
 
 .feather {
-  width: 30px;
-  height: 30px;
-  vertical-align: text-bottom;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
   stroke: #cccc33;
 }
 
@@ -139,17 +139,17 @@ export default {
   color: #333;
 }
 
-.sidebar .nav-link feather-icon {
+.sidebar .nav-link .feather {
   margin-right: 4px;
-  color: #ff3355;
+  color: #999;
 }
 
 .sidebar .nav-link.active {
   color: #007bff;
 }
 
-.sidebar .nav-link:hover feather-icon,
-.sidebar .nav-link.active feather-icon {
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
   color: inherit;
 }
 
@@ -182,6 +182,13 @@ export default {
   padding: .75rem 1rem;
   border-width: 0;
   border-radius: 0;
+}
+
+.log-out {
+  height: 16px;
+  width: 16px; 
+  stroke: theme-color("info");
+
 }
 
 
