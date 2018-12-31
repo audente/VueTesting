@@ -3,8 +3,8 @@
 
   <div id="app">
 
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-40">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EY In<strong>TAX</strong>lligence</a>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap m-0 p-50">
+      <h2><a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">EY In<strong>TAX</strong>lligence</a></h2>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="#">Sign out</a>
@@ -27,7 +27,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <File />
+                  <feather-icon type="file"></feather-icon>
                   Cargar
                 </a>
               </li>
@@ -37,13 +37,13 @@
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
+                  <feather-icon type="file-text"></feather-icon>
                   2018-12-30
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file-text"></span>
+                  <feather-icon type="file-text"></feather-icon>
                   2018-12-29
                 </a>
               </li>
