@@ -8,10 +8,10 @@
       <span class="navbar-text">In<strong>TAX</strong>lligence</span>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">
+          <button type="button" class="btn btn-outline-info">
             <feather-icon type="log-out" style="width:24px; height:24px; vertical-align:middle; color:#ffffff"></feather-icon>
             Salir
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
@@ -96,9 +96,9 @@ export default {
   margin-top: 0px;
 }
 
-.feather-icon {
-  width: 16px;
-  height: 16px;
+feather-icon {
+  width: 30px;
+  height: 30px;
   vertical-align: text-bottom;
 }
 
