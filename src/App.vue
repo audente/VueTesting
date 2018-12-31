@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <b-navbar toggleable="md" fixed="top" sticky="true" type="dark" variant="info">
+    <b-navbar toggleable="md" fixed="top" sticky="true" type="dark">
         <b-navbar-brand>EY</b-navbar-brand>
         <b-nav-text>In<strong>TAX</strong>lligence</b-nav-text>
     
@@ -24,8 +24,8 @@
         
     </b-navbar>
     
-    <b-container class="bv-example-row">
-        <b-row>
+    <b-container>
+        <b-row class="h-100" style="background-color=#441122">
             <b-col cols="3" class="sidebar">
                 <div class="h-100" style="background-color=#44ff66">
                     Sidebar
