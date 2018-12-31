@@ -3,7 +3,7 @@
   <div id="app">
     <b-navbar toggleable="md" type="dark" variant="info">
         <b-navbar-brand href="#">EY</b-navbar-brand>
-        <b-nav-text>In<strong>TAX</strong>lligence<b-nav-text>
+        <b-nav-text>In<strong>TAX</strong>lligence</b-nav-text>
     
         <b-collapse is-nav id="nav_collapse">
     
