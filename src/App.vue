@@ -10,7 +10,7 @@
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
             Salir &nbsp;
-            <feather-log-out class="feather logout" />
+            <feather-log-out class="logout" />
           </button>
         </li>
       </ul>
@@ -186,8 +186,11 @@ export default {
   border-radius: 0;
 }
 
-.feather.logout {
-  stroke: #44ff88;
+.logout {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  stroke: #ffffff;
 }
 
 
