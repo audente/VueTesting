@@ -136,7 +136,8 @@ export default {
 
 .sidebar .nav-link {
   font-weight: 500;
-  color: #333;
+  color: #999;
+  stroke: #999;
 }
 
 .sidebar .nav-link .feather {
@@ -145,11 +146,13 @@ export default {
 
 .sidebar .nav-link.active {
   color: #007bff;
+  stroke: #007bff;
 }
 
 .sidebar .nav-link:hover .feather,
 .sidebar .nav-link.active .feather {
   color: inherit;
+  stroke: inherit;
 }
 
 .sidebar-heading {
@@ -186,7 +189,7 @@ export default {
 .log-out {
   height: 16px;
   width: 16px; 
-  stroke: theme-color("info");
+  stroke: $theme-color("light");
 
 }
 
