@@ -3,11 +3,15 @@
 
   <div id="app">
 
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap m-0 p-0">
-      <h2 class="navbar-brand col-sm-3 col-md-2">EY In<strong>TAX</strong>lligence</h2>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap m-0 p-0">
+      <h2 class="navbar-brand col-sm-3 col-md-2">EY</h2>
+      <span class="navbar-text">In<strong>TAX</strong>lligence</span>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
+          <a class="nav-link" href="#">
+            <feather-icon type="log-out"></feather-icon>
+            Salir
+          </a>
         </li>
       </ul>
     </nav>
@@ -94,7 +98,7 @@ export default {
   margin-top: 0px;
 }
 
-.feather-icon {
+feather-icon {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
@@ -129,7 +133,7 @@ export default {
   color: #333;
 }
 
-.sidebar .nav-link .feather-icon {
+.sidebar .nav-link feather-icon {
   margin-right: 4px;
   color: #ff3355;
 }
@@ -138,8 +142,8 @@ export default {
   color: #007bff;
 }
 
-.sidebar .nav-link:hover .feather-icon,
-.sidebar .nav-link.active .feather-icon {
+.sidebar .nav-link:hover feather-icon,
+.sidebar .nav-link.active feather-icon {
   color: inherit;
 }
 
@@ -155,7 +159,15 @@ export default {
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  font-size: 6rem;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar-text {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 3rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
