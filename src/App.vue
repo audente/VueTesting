@@ -9,7 +9,7 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">
-            <feather-icon type="log-out" style="width:30px; height:30px; vertical-align:middle; stroke:red"></feather-icon>
+            <feather-icon type="log-out" style="width:40px; height:40px; vertical-align:middle; stroke:#ff80c0; color:#ffffff;"></feather-icon>
             Salir
           </button>
         </li>
@@ -103,7 +103,7 @@ feather-icon {
 }
 
 
-.body, #main-container {
+.body {
   padding-top: 200px;
 }
 
@@ -119,7 +119,6 @@ feather-icon {
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 0;
-  padding-top:100px
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
