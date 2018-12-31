@@ -9,14 +9,14 @@
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="#">
-            <feather-icon type="log-out"></feather-icon>
+            <feather-icon type="log-out" style="width:12px; height:12px; vertical-align:text-bottom; color:#ff4422"></feather-icon>
             Salir
           </a>
         </li>
       </ul>
     </nav>
 
-    <div class="container-fluid m-100">
+    <div class="container-fluid" id="main-container">
       <div class="row">
       
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -98,11 +98,21 @@ export default {
   margin-top: 0px;
 }
 
-.feather {
+.feather-icon {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
 }
+
+
+.body {
+  padding-top: 200;
+}
+
+#main-container {
+  padding-top: 200;
+}
+
 
 /*
  * Sidebar
