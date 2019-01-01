@@ -4,7 +4,6 @@
     <div id="LoginPage" class="col-md-6">
       <h1>{{ Login }}</h1>
         <form action="">
-          <label for="email">Email address:</label><br/>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
