@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import EYLayout from "./EYLayout";
+import EYLayout from "./components/EYLayout";
 
 export default {
   name: "LoginPage",
