@@ -40,10 +40,6 @@ export default {
   margin-top: 0px;
 }
 
-.body {
-  background-color: #aaaaaa;
-}
-
 .feather {
   width: 16px;
   height: 16px;

@@ -5,7 +5,7 @@
       <h1>{{ Login }}</h1>
         <form action="">
           <div class="form-group">
-            <label for="pwd">Password:</label>
+            <label for="pwd">Usuario:</label>
             <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
           </div>
           <div class="form-group">
@@ -17,6 +17,7 @@
           </div>
           <div class="form-group">
             <button type="reset" class="btn btn-primary">Limpiar</button>
+            &nbsp; &nbsp; &nbsp; 
             <button type="submit" class="btn btn-primary" v-on:click="login">Entrar</button>
           </div>
         </form>
