@@ -12,6 +12,7 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
           <WelcomePage />
+          <LoginPage />
         </main>
         
       </div>
@@ -26,13 +27,15 @@
 import EYNavBar from "./components/EYNavBar";
 import EYSideBar from "./components/EYSideBar";
 import WelcomePage from "./components/WelcomePage";
+import LoginPage from "./components/LoginPage";
 
 export default {
   name: "App",
   components: {
     EYNavBar,
     EYSideBar,
-    WelcomePage
+    WelcomePage,
+    LoginPage,
   }
 };
 </script>

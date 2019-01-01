@@ -1,9 +1,9 @@
 <template>
-  <div class="WelcomePage">
+  <div id="WelcomePage">
     <h1>{{ msg1 }}</h1>
     <hr />
     <p>{{ msg2 }}</p>
-    <p><small>{{ msg3 }}</small></p>
+    <p>{{ msg3 }}</p>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       msg1: "Llenado de Declaración",
-      msg2: "Te ayuda a llenar de forma rápida una declaración con base en la balanza de un clinte.",
+      msg2: "Te ayuda a llenar de forma rápida una declaración con base en la balanza de un cliente.",
       msg3: "Si tienes dudas contacta al equipo de TTDA.",
     };
   }
@@ -23,7 +23,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
 
-.WelcomePage {
+#WelcomePage {
   text-align: "center";
   vertical-align: "middle";
 }
