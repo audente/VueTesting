@@ -2,7 +2,7 @@
   <div class="EYNavBar">
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap m-0 p-0">
       <h2 class="navbar-brand col-sm-3 col-md-2">{{ brand }}</h2>
-      <span class="navbar-text"><small>{{ subtitle }}: </small>{{ title }}</span>
+      <span class="navbar-text"><small><span v-html="subtitle"></span>: </small>{{ title }}</span>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <button type="button" class="btn btn-outline-info">

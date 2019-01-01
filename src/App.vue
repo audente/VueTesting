@@ -8,16 +8,10 @@
     <div class="container-fluid" style="margin-top:200; padding-top:200;" id="main-container">
       <div class="row">
       
-        <EYSideBar id="sidebar" />
+        <EYSideBar/>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-        
           <HelloWorld />
-          <hr/>
-          <div class="alert alert-danger" role="alert">
-            This is a danger alert—check it out!
-          </div>
-
         </main>
         
       </div>
@@ -61,7 +55,7 @@ export default {
   stroke: #cccccc;
 }
 
-#main-container, #sidebar {
+#main-container, .sidebar {
   padding-top: 100px;
 }
 
