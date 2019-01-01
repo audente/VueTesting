@@ -7,6 +7,7 @@ import VueFeatherIcon from 'vue-feather-icon'
 import "bootstrap/dist/css/bootstrap.css";
 
 // import App from "./App";
+import { store } from './Store'
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
 
@@ -25,13 +26,15 @@ const router = new VueRouter({
 
 
 new Vue({
-  router
+  router,
+  store,
 }).$mount('#app')
 
 
 /*
 new Vue({
   el: "#app",
+  store,
   components: { App, router },
   template: "<App/>"
 });

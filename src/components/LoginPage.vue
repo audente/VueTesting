@@ -44,7 +44,11 @@ export default {
   },
   methods: {
     login: function (event) {
-      alert('Usuario: ' + this.user + '; Password: ' + this.password + ';') 
+      if (this.user + '1') === this.password {
+        this.$store.commit('login', this.user);
+        let usuario = this.$store.getters.user;
+        alert('Usuario: ' + usuario) 
+      }
     }
   }
 };
