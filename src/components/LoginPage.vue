@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import EYLayout from "./components/EYLayout";
+import EYLayout from "./EYLayout";
 
 export default {
   name: "LoginPage",
@@ -18,7 +18,7 @@ export default {
     return {
       msg: "Hello beauty Vue.js!",
       components: {
-        EYLayout,
+        EYLayout
       }
     };
   }
