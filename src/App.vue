@@ -29,11 +29,15 @@
 
 
 <script>
+import EYNavBar from "./components/EYNavBar";
+import EYSideBar from "./components/EYSideBar";
 import HelloWorld from "./components/HelloWorld";
 
 export default {
   name: "App",
   components: {
+    EYNavBar,
+    EYSideBar,
     HelloWorld
   }
 };
