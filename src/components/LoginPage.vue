@@ -2,7 +2,7 @@
   <EYLayout :title="title">
     <template slot="SideBar"><div></div></template>
     <div id="LoginPage" class="col-md-6">
-      <h1>{{ Login }}</h1>
+      <h1>Login</h1>
         <form action="">
           <div class="form-group">
             <label for="pwd">Usuario:</label>

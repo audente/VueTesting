@@ -11,10 +11,10 @@ export const store = new Vuex.Store({
   mutations: {
     login(state, user) {
       state.user = user
-    }
+    },
     logout(state, user) {
       state.user = ''
-    }
+    },
   },
   getters: {
     user: state => state.user,
