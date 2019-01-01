@@ -16,7 +16,7 @@ export default {
   },
   components: {
     EYLayout,
-  }
+  },
   data() {
     return {
       msg: "Hello beauty Vue.js!",
