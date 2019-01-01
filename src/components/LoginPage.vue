@@ -4,23 +4,21 @@
     <div id="LoginPage" class="col-md-6">
       <h1>{{ Login }}</h1>
         <form action="">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
             <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-              <input type="password" class="form-control" id="pwd" v-model="password">
-            </div>
+            <input type="password" class="form-control" id="pwd" v-model="password">
           </div>
           <div class="checkbox">
             <label><input type="checkbox"> Remember me</label>
           </div>
-          <button type="reset" class="btn btn-primary">Limpiar</button>
-          &nbsp; &nbsp;
-          <button type="submit" class="btn btn-primary" v-on:click="login">Entrar</button>
+          <div class="form-group">
+            <button type="reset" class="btn btn-primary">Limpiar</button>
+            <button type="submit" class="btn btn-primary" v-on:click="login">Entrar</button>
+          </div>
         </form>
     </div>
   </EYLayout>
