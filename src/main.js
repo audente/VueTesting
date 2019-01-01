@@ -6,7 +6,7 @@ import VueRouter from 'vue-router'
 import VueFeatherIcon from 'vue-feather-icon'
 import "bootstrap/dist/css/bootstrap.css";
 
-import App from "./App";
+// import App from "./App";
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
 
@@ -18,25 +18,23 @@ Vue.config.productionTip = false;
 
 const router = new VueRouter({
   routes: [
-    { path: '/', component: App, children: [ 
-        { path: '/login',   component: LoginPage },
-        { path: '/welcome', component: WelcomePage }
-      ],
-    },
+    { path: '/',        component: LoginPage },
+    { path: '/welcome', component: WelcomePage }
   ]
 })
 
-/*
+
 new Vue({
   router
 }).$mount('#app')
-*/
 
 
+/*
 new Vue({
   el: "#app",
   components: { App, router },
   template: "<App/>"
 });
+*/
 
 
