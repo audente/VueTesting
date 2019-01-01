@@ -1,41 +1,28 @@
 
 <template>
-
   <div id="app">
-
     <EYNavBar title="Declaración" />
-    
     <div class="container-fluid" style="margin-top:200; padding-top:200;" id="main-container">
-      <div class="row">
-      
+      <div class="row">      
         <EYSideBar/>
-
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-          <WelcomePage />
-          <LoginPage />
+          <router-view></router-view>
         </main>
-        
       </div>
     </div>
-
   </div>
-  
 </template>
 
 
 <script>
 import EYNavBar from "./components/EYNavBar";
 import EYSideBar from "./components/EYSideBar";
-import WelcomePage from "./components/WelcomePage";
-import LoginPage from "./components/LoginPage";
 
 export default {
   name: "App",
   components: {
     EYNavBar,
     EYSideBar,
-    WelcomePage,
-    LoginPage,
   }
 };
 </script>

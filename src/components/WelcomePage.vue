@@ -23,7 +23,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
 
-#WelcomePage {
+h1, 
+p {
   text-align: "center";
   vertical-align: "middle";
 }
