@@ -1,9 +1,9 @@
 <template>
-    <div id="LoginPage">
   <EYLayout :title="title">
+    <div id="LoginPage">
       <h1>{{ msg }}</h1>
-  </EYLayout>
     </div>
+  </EYLayout>
 </template>
 
 <script>
@@ -14,12 +14,12 @@ export default {
   props: {
     title: String,
   },
+  components: {
+    EYLayout,
+  }
   data() {
     return {
       msg: "Hello beauty Vue.js!",
-      components: {
-        'EYLayout': EYLayout,
-      }
     };
   }
 };

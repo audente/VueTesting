@@ -17,14 +17,14 @@ export default {
   props: {
     title: String,
   },
+  components: {
+    EYLayout,
+  },
   data() {
     return {
       msg1: "Llenado de Declaración",
       msg2: "Te ayuda a llenar de forma rápida una declaración con base en la balanza de un cliente.",
       msg3: "Si tienes dudas contacta al equipo de TTDA.",
-      components: {
-        EYLayout,
-      },
     };
   }
 };
