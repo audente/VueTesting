@@ -11,7 +11,7 @@
         <EYSideBar/>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-          <HelloWorld />
+          <WelcomePage />
         </main>
         
       </div>
@@ -25,14 +25,14 @@
 <script>
 import EYNavBar from "./components/EYNavBar";
 import EYSideBar from "./components/EYSideBar";
-import HelloWorld from "./components/HelloWorld";
+import WelcomePage from "./components/WelcomePage";
 
 export default {
   name: "App",
   components: {
     EYNavBar,
     EYSideBar,
-    HelloWorld
+    WelcomePage
   }
 };
 </script>
