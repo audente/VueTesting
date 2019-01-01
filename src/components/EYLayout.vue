@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div id="EYLayout">
     <EYNavBar :title="title" />
     <div class="container-fluid" style="margin-top:200; padding-top:200;" id="main-container">
       <div class="row">      

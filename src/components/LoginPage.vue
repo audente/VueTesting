@@ -1,9 +1,9 @@
 <template>
-  <EYLayout :title="title">
     <div id="LoginPage">
+  <EYLayout :title="title">
       <h1>{{ msg }}</h1>
-    </div>
   </EYLayout>
+    </div>
 </template>
 
 <script>
