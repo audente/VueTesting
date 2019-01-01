@@ -6,19 +6,23 @@
         <form action="">
           <div class="form-group">
             <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
+            </div>
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input type="password" class="form-control" id="pwd" v-model="password">
+            </div>
           </div>
           <div class="checkbox">
             <label><input type="checkbox"> Remember me</label>
           </div>
           <button type="reset" class="btn btn-primary">Limpiar</button>
-          <button type="submit" class="btn btn-primary">Entrar</button>
+          <button type="submit" class="btn btn-primary" v-on:click="login">Entrar</button>
         </form>
     </div>
   </EYLayout>
@@ -37,7 +41,14 @@ export default {
   },
   data() {
     return {
+      user: '';
+      password: '';
     };
+  },
+  methods: {
+    login: function (event) {
+      alert('Usuario: ' + this.user + '; Password: ' + this.password + ';') 
+    }
   }
 };
 </script>
