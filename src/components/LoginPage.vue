@@ -1,5 +1,5 @@
 <template>
-  <EYLayout title="{{ title }}">
+  <EYLayout :title="title">
     <div id="LoginPage">
       <h1>{{ msg }}</h1>
     </div>
