@@ -1,6 +1,6 @@
 <template>
   <EYLayout :title="title">
-    <template slot="SideBar"></template>
+    <template slot="SideBar"><div></div></template>
     <div id="LoginPage">
       <h1>{{ msg }}</h1>
     </div>
