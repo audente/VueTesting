@@ -1,15 +1,13 @@
 <template>
   <EYLayout :title="title">
     <template slot="SideBar"><div></div></template>
-    <div id="LoginPage">
+    <div id="LoginPage" class="col-md-6">
       <h1>{{ Login }}</h1>
         <form action="">
-          <div class="form-group">
-            <label for="email">Email address:</label>
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
-            </div>
+          <label for="email">Email address:</label>
+          <div class="input-group">
+            <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
