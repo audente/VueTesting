@@ -3,9 +3,9 @@
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap m-0 p-0">
       <h2 class="navbar-brand col-sm-3 col-md-2">{{ brand }}</h2>
       <span class="navbar-text"><small><span v-html="subtitle"></span>: </small>{{ title }}</span>
-      <ul class="navbar-nav px-3">
+      <ul class="navbar-nav px-3" v-if="loggedin">
         <li class="nav-item text-nowrap">
-          <button type="button" class="btn btn-outline-info">
+          <button type="button" class="btn btn-outline-info" @click="logout">
             Salir »
           </button>
         </li>
@@ -25,6 +25,17 @@ export default {
       brand: "EY",
       subtitle: "In<strong>TAX</strong>lligence"
     };
+  },
+  computed: {
+    loggedin: function () {
+      return this.$store.getters.isLoggedIn;
+    }
+  }
+  methods: {
+    logout: function (event) {
+        this.$store.commit('logout', '');
+        this.$router.push('login');
+    }
   }
 };
 </script>

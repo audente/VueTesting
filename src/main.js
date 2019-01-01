@@ -19,8 +19,8 @@ Vue.config.productionTip = false;
 const title = "Declaración";
 const router = new VueRouter({
   routes: [
-    { path: '/',        component: LoginPage,   props: {title: title}, },
-    { path: '/welcome', component: WelcomePage, props: {title: title}, }
+    { name:'login',   path: '/',        component: LoginPage,   props: {title: title}, },
+    { name:'welcome', path: '/welcome', component: WelcomePage, props: {title: title}, }
   ]
 })
 
