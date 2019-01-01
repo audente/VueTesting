@@ -1,10 +1,14 @@
 <template>
-  <div id="LoginPage">
-    <h1>{{ msg }}</h1>
-  </div>
+  <EYLayout title="{{ title }}">
+    <div id="LoginPage">
+      <h1>{{ msg }}</h1>
+    </div>
+  </EYLayout>
 </template>
 
 <script>
+import EYLayout from "./EYLayout";
+
 export default {
   name: "LoginPage",
   props: {

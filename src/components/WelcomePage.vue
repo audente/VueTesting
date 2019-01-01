@@ -1,15 +1,22 @@
 <template>
-  <div id="WelcomePage">
-    <h1>{{ msg1 }}</h1>
-    <hr />
-    <p>{{ msg2 }}</p>
-    <p>{{ msg3 }}</p>
-  </div>
+  <EYLayout title="{{ title }}">
+    <div id="WelcomePage">
+      <h1>{{ msg1 }}</h1>
+      <hr />
+      <p>{{ msg2 }}</p>
+      <p>{{ msg3 }}</p>
+    </div>
+  </EYLayout>
 </template>
 
 <script>
+import EYLayout from "./EYLayout";
+
 export default {
   name: "WelcomePage",
+  props: {
+    title: String,
+  },
   data() {
     return {
       msg1: "Llenado de Declaración",

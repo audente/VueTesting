@@ -10,16 +10,16 @@ import "bootstrap/dist/css/bootstrap.css";
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
 
-Vue.use(VueRouter)
-Vue.use(VueFeatherIcon)
+Vue.use(VueRouter);
+Vue.use(VueFeatherIcon);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
-
+const title = "Declaración";
 const router = new VueRouter({
   routes: [
-    { path: '/',        component: LoginPage },
-    { path: '/welcome', component: WelcomePage }
+    { path: '/',        component: LoginPage,   props: {title: title}, },
+    { path: '/welcome', component: WelcomePage, props: {title: title}, }
   ]
 })
 
