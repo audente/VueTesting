@@ -1,5 +1,3 @@
-
-
 <template>
   <div id="EYLayout">
     <EYNavBar :title="title" />
