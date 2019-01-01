@@ -19,7 +19,7 @@ Vue.config.productionTip = false;
 const router = new VueRouter({
   routes: [
     { path: '/', component: App, children: [ 
-        { path: '/',        component: LoginPage },
+        { path: '/login',   component: LoginPage },
         { path: '/welcome', component: WelcomePage }
       ],
     },
