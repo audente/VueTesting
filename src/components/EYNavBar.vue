@@ -30,7 +30,7 @@ export default {
     loggedin: function () {
       return this.$store.getters.isLoggedIn;
     }
-  }
+  },
   methods: {
     logout: function (event) {
         this.$store.commit('logout', '');
