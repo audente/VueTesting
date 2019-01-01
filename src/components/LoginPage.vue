@@ -1,8 +1,10 @@
 <template>
     <div id="LoginPage">
+      <h1>{{ msg }}</h1>
   <EYLayout :title="title">
       <h1>{{ msg }}</h1>
   </EYLayout>
+      <h1>{{ msg }}</h1>
     </div>
 </template>
 
