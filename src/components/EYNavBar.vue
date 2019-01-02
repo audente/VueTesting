@@ -35,7 +35,7 @@ export default {
   methods: {
     logout: function (event) {
         this.$store.commit('logout', '');
-        this.$router.push('login');
+        this.$router.push({name:'login'});
     }
   }
 };
