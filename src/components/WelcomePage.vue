@@ -37,10 +37,10 @@ export default {
   methods: {
     openChart: function (event) {
         this.$router.push({name:'chart'});
-    }
+    },
     click: function (event) {
         alert('Hola');
-    }
+    },
   },
   mounted: function () {
   var ctx = document.getElementById("main-chart");
