@@ -7,6 +7,7 @@ import VueFeatherIcon from 'vue-feather-icon'
 import "bootstrap/dist/css/bootstrap.css";
 import Chart from "chart.js";
 
+
 // import App from "./App";
 import { store } from './Store'
 import WelcomePage from "./components/WelcomePage";

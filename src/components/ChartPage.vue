@@ -1,7 +1,7 @@
 <template>
   <EYLayout :title="title">
     <div id="ChartPage">
-      <canvas id="testChart"></canvas>
+      <canvas id="test-chart">{{ msg }}</canvas>
     </div>
   </EYLayout>
 </template>
@@ -24,7 +24,7 @@ export default {
     };
   },
   mounted: function () {
-    var ctx = document.getElementById("ChartPage");
+    var ctx = document.getElementById("test-chart");
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
