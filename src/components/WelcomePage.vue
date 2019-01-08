@@ -28,8 +28,8 @@ export default {
   data() {
     return {
       metrics: {
-        summary1: {name: "Ingresos", description: "Ingresos Nominales MDP", amount:"$ 13.235"},
-        summary2: {name: "ISR", description: "ISR Retenido MDP", amount:"$ 0.317"},
+        summary1: {name: "Ingresos", description: "Ingresos Nominales MDP", amount:"$ 13.23"},
+        summary2: {name: "ISR", description: "ISR Retenido MDP", amount:"$ 0.32"},
         summary3: {name: "Coef", description: "Coeficiente de Utilidad", amount:"0.04"},
       }
     };
@@ -44,9 +44,9 @@ export default {
   var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
       datasets: [{
-        data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+        data: [2.567, 4.291, 5.981, 7.549, 8.966, 10.561, 11.652, 13.198],
         lineTension: 0,
         backgroundColor: 'transparent',
         borderColor: '#007bff',
@@ -58,7 +58,7 @@ export default {
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: false
+            beginAtZero: true
           }
         }]
       },
