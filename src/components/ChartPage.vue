@@ -7,9 +7,13 @@
 </template>
 
 <script>
+import EYLayout from "./EYLayout";
+
 export default {
   name: "ChartPage",
-  components: { },
+  components: {
+    EYLayout, 
+  },
   props: {
     title: String,
   },
@@ -19,8 +23,7 @@ export default {
       
     };
   },
-
-methods: {
+  methods: {
     f: function (event) {},
   },
 };
