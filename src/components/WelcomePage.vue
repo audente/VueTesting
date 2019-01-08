@@ -4,7 +4,7 @@
       <div class="row"> <TileComponent :metric="metrics.summary1.amount" :concept="metrics.summary1.name" :detail="metrics.summary1.description" icon="bar-chart-2"></TileComponent> <TileComponent :metric="metrics.summary2.amount" :concept="metrics.summary2.name" :detail="metrics.summary2.description" icon="bar-chart-2"></TileComponent> <TileComponent :metric="metrics.summary3.amount" :concept="metrics.summary3.name" :detail="metrics.summary3.description" icon="bar-chart-2"></TileComponent>
       </div>
       <div class="row">
-        <canvas id="main-chart">{{ msg }}</canvas>
+        <canvas id="main-chart" @click="click">{{ msg }}</canvas>
       </div>
     </div>
   </EYLayout>
@@ -38,6 +38,9 @@ export default {
     openChart: function (event) {
         this.$router.push({name:'chart'});
     }
+    click: function (event) {
+        alert('Hola');
+    }
   },
   mounted: function () {
   var ctx = document.getElementById("main-chart");
@@ -51,7 +54,19 @@ export default {
         backgroundColor: 'transparent',
         borderColor: '#007bff',
         borderWidth: 4,
-        pointBackgroundColor: '#007bff'
+        pointBackgroundColor: '#007bff',
+        type: 'bar',
+        label: 'Ingresos Acumulados',
+      },
+      {
+        data: [2.567, 1.723, 1.690, 1.568, 1.416, 1.594, 1.091, 1.545],
+        lineTension: 0,
+        backgroundColor: 'transparent',
+        borderColor: '#ff7bff',
+        borderWidth: 8,
+        pointBackgroundColor: '#007bff',
+        type: 'line',
+        label: 'Ingresos Nominales',
       }]
     },
     options: {
