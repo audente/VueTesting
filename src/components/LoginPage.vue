@@ -6,11 +6,11 @@
         <form action="">
           <div class="form-group">
             <label for="pwd">Usuario:</label>
-            <input type="email" class="form-control" id="email" placeholder="EY email" v-model="user">
+            <input type="email" class="form-control" id="email" placeholder="email" v-model="user">
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" v-model="password">
+            <input type="password" class="form-control" id="pwd" v-model="password" placeholder="password">
           </div>
           <div class="checkbox">
             <label><input type="checkbox"> Remember me</label>
