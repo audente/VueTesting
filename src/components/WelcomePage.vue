@@ -1,18 +1,18 @@
 <template>
   <EYLayout :title="title">
     <div id="WelcomePage">
-      <h1>{{ msg1 }}</h1>
-      <hr />
-      <p>{{ msg2 }}</p>
-      <p>{{ msg3 }}</p>
-      <hr />
-      <button type="button" class="btn btn-primary" @click="openChart">Chart</button>
+      <div class="row">
+        <TileComponent metric="$ 12.2" concept="Ingresos" detail="Ingresos Nominales MDP" icon="circle"></TileComponent>
+      </div>
+      <div class="row">
+      </div>
     </div>
   </EYLayout>
 </template>
 
 <script>
 import EYLayout from "./EYLayout";
+import TileComponent from "./TileComponent";
 
 export default {
   name: "WelcomePage",
@@ -21,12 +21,11 @@ export default {
   },
   components: {
     EYLayout,
+    TileComponent,
   },
   data() {
     return {
       msg1: "Llenado de Declaración",
-      msg2: "Te ayuda a llenar de forma rápida una declaración con base en la balanza de un cliente.",
-      msg3: "Si tienes dudas contacta al equipo de TTDA.",
     };
   },
   methods: {

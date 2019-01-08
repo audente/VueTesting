@@ -18,7 +18,7 @@ Vue.use(VueFeatherIcon);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
-const title = "Declaración";
+const title = "Mexichem: ISR";
 const router = new VueRouter({
   routes: [
     { name:'login',   path: '/',        component: LoginPage,   props: {title: title}, },
