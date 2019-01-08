@@ -5,7 +5,6 @@ import Vue from "vue";
 import VueRouter from 'vue-router'
 import VueFeatherIcon from 'vue-feather-icon'
 import "bootstrap/dist/css/bootstrap.css";
-import Chart from "chart.js";
 
 
 // import App from "./App";
@@ -14,7 +13,6 @@ import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
 import ChartPage from "./components/ChartPage";
 
-Vue.use(Chart);
 Vue.use(VueRouter);
 Vue.use(VueFeatherIcon);
 Vue.config.productionTip = false;

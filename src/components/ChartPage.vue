@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import Chart from "chart.js";
 import EYLayout from "./EYLayout";
 
 export default {
