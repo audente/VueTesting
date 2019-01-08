@@ -3,10 +3,10 @@
     <div id="WelcomePage">
       <div class="row">
         <TileComponent metric="$ 12.1" concept="Ingresos" detail="Ingresos Nominales MDP" icon="circle"></TileComponent>
-        <TileComponent metric="$ 12.2" concept="Ingresos" detail="Ingresos Nominales MDP" icon="circle"></TileComponent>
+        <TileComponent metric="$ 12.2" concept="Ingresos" detail="Ingresos Nominales MDP" icon="activity"></TileComponent>
       </div>
       <div class="row">
-        <TileComponent metric="$ 12.3" concept="Ingresos" detail="Ingresos Nominales MDP" icon="circle"></TileComponent>
+        <TileComponent metric="$ 12.3" concept="Ingresos" detail="Ingresos Nominales MDP" icon="airplay"></TileComponent>
       </div>
     </div>
   </EYLayout>
