@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { store } from './Store'
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
+import ChartPage from "./components/ChartPage";
 
 Vue.use(VueRouter);
 Vue.use(VueFeatherIcon);
@@ -20,7 +21,8 @@ const title = "Declaración";
 const router = new VueRouter({
   routes: [
     { name:'login',   path: '/',        component: LoginPage,   props: {title: title}, },
-    { name:'welcome', path: '/welcome', component: WelcomePage, props: {title: title}, }
+    { name:'welcome', path: '/welcome', component: WelcomePage, props: {title: title}, },
+    { name:'chart',   path: '/chart',   component: ChartPage,   props: {title: title}, },
   ]
 })
 

@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "chart.js": "2.7.3",
     "bootstrap": "4.2.1",
     "vue-feather-icon": "1.2.0",
     "vue-router": "3.0.2",

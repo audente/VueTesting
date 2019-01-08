@@ -5,6 +5,8 @@
       <hr />
       <p>{{ msg2 }}</p>
       <p>{{ msg3 }}</p>
+      <hr />
+      <button type="button" class="btn btn-primary" @click="openChart">Chart</button>
     </div>
   </EYLayout>
 </template>
@@ -26,6 +28,11 @@ export default {
       msg2: "Te ayuda a llenar de forma rápida una declaración con base en la balanza de un cliente.",
       msg3: "Si tienes dudas contacta al equipo de TTDA.",
     };
+  },
+  methods: {
+    openChart: function (event) {
+        this.$router.push({name:'chart'});
+    }
   }
 };
 </script>
