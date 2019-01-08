@@ -1,7 +1,7 @@
 <template>
   <div id="TileComponent" class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="tile-stats">
-      <div class="icon"><feather-icon :type="icon"></feather-icon></div>
+      <div class="icon"><feather-icon :type="icon" width="60" stroke="#ff8800" stroke-width="6"></feather-icon></div>
         <div class="count">{{ metric }}</div>
         <h3>{{ concept }} </h3>
         <p>{{ detail }}</p>
