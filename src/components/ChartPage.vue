@@ -18,14 +18,14 @@ export default {
     title: String,
   },
   data() {
-    drawChart();
+    this.drawChart();
     return {
       msg: "Hello beauty Vue.js!"
       
     };
   },
   methods: {
-    f: drawChart() {
+    drawChart: function () {
       var ctx = document.getElementById("ChartPage");
       var myChart = new Chart(ctx, {
         type: 'line',
