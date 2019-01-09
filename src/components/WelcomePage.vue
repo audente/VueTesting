@@ -48,18 +48,10 @@ export default {
   mounted: function () {
   var ctx = document.getElementById("main-chart");
   var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
       labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-      datasets: [{
-        data: [2.567, 4.291, 5.981, 7.549, 8.966, 10.561, 11.652, 13.198],
-        lineTension: 0,
-        backgroundColor: '#ff7bff',
-        borderColor: '#ff7bff',
-        borderWidth: 4,
-        pointBackgroundColor: '#ff7bff',
-        label: 'Ingresos Acumulados',
-      },
+      datasets: [
       {
         data: [2.567, 1.723, 1.690, 1.568, 1.416, 1.594, 1.091, 1.545],
         lineTension: 0,
@@ -67,9 +59,19 @@ export default {
         borderColor: '#447bff',
         borderWidth: 8,
         pointBackgroundColor: '#007bff',
-        type: 'line',
         label: 'Ingresos Nominales',
-      }]
+      },
+      {
+        data: [2.567, 4.291, 5.981, 7.549, 8.966, 10.561, 11.652, 13.198],
+        lineTension: 0,
+        backgroundColor: '#aa7b88',
+        borderColor: '#ff7bbb',
+        borderWidth: 4,
+        pointBackgroundColor: '#ff7bff',
+        type: 'bar',
+        label: 'Ingresos Acumulados',
+      },
+      ]
     },
     options: {
       scales: {

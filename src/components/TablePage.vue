@@ -2,14 +2,19 @@
   <EYLayout :title="title">
     <template slot="SideBar"><MexichemSideBar></MexichemSideBar></template>
     <div id="TablePage">
-      <div class="row">
-        <table>
-          <tr>
-            <thead>Hola</thead>
-          </tr>
-          <tr>
-            <td>{{ msg }}</td>
-          </tr>
+    <div class="row">
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <thead>Hola</thead>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ msg }}</td>
+              </tr>
+            </tbody>
         </table> 
       </div>
     </div>
@@ -17,9 +22,15 @@
 </template>
 
 <script>
+import EYLayout from "./EYLayout";
+import MexichemSideBar from "./MexichemSideBar";
+
 export default {
   name: "TablePage",
-  components: { },
+  components: {
+    EYLayout, 
+    MexichemSideBar,
+  },
   props: {
     title: String,
   },

@@ -1,7 +1,7 @@
 <template>
   <div id="EYLayout">
     <EYNavBar :title="title" />
-    <div class="container-fluid" style="margin-top:200; padding-top:200;" id="main-container">
+    <div class="container-fluid" style="margin-top:300; padding-top:300;" id="main-container">
       <div class="row">      
         <slot name="SideBar">
           <EYSideBar/>
