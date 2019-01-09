@@ -1,24 +1,10 @@
 <template>
-  <div class="MexichemSideBar">
-    <nav class="col-md-2 d-none d-md-block bg-light sidebar" style="padding-top:300;">
+  <div class="MexichemSideBar" style="padding-top:300;">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
       <div class="sidebar-sticky">
       
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <feather-home class="feather" />
-              Inicio <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <feather-file class="feather" />
-              Cargar
-            </a>
-          </li>
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>Últimos</span></h6>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>Entidad</span></h6>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>Mes</span></h6>
       </div>
     </nav>
   </div>

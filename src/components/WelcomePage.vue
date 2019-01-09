@@ -54,10 +54,10 @@ export default {
       datasets: [{
         data: [2.567, 4.291, 5.981, 7.549, 8.966, 10.561, 11.652, 13.198],
         lineTension: 0,
-        backgroundColor: 'transparent',
-        borderColor: '#007bff',
+        backgroundColor: '#ff7bff',
+        borderColor: '#ff7bff',
         borderWidth: 4,
-        pointBackgroundColor: '#007bff',
+        pointBackgroundColor: '#ff7bff',
         label: 'Ingresos Acumulados',
       },
       {

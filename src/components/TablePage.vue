@@ -1,7 +1,19 @@
 <template>
-  <div id="TablePage">
-    <h1>{{ msg }}</h1>
-  </div>
+  <EYLayout :title="title">
+    <template slot="SideBar"><MexichemSideBar></MexichemSideBar></template>
+    <div id="TablePage">
+      <div class="row">
+        <table>
+          <tr>
+            <thead>Hola</thead>
+          </tr>
+          <tr>
+            <td>{{ msg }}</td>
+          </tr>
+        </table> 
+      </div>
+    </div>
+  </EYLayout>
 </template>
 
 <script>
