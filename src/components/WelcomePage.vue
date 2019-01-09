@@ -68,7 +68,6 @@ export default {
         borderColor: '#ff7bbb',
         borderWidth: 4,
         pointBackgroundColor: '#ff7bff',
-        type: 'bar',
         label: 'Ingresos Acumulados',
       },
       ]

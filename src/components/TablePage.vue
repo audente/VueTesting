@@ -7,12 +7,12 @@
           <table class="table table-striped table-sm">
             <thead>
               <tr>
-                <thead>Hola</thead>
+                <th v-for="headname in table.head">{{ headname }}</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>{{ msg }}</td>
+              <tr v-for="rowcontent in table.body">
+                <td v-for="colcontent in rowcontent">{{ colcontent }}</td>
               </tr>
             </tbody>
           </table> 
@@ -37,7 +37,14 @@ export default {
   },
   data() {
     return {
-      msg: "Hello beauty Vue.js!"
+      table: {
+        head: ["Concepto", "Enero", "Febrero"],
+        body: [
+          ["Ingresos Nominales", "$2,567,173,390", "$1,723,991,281",],
+          ["Ingresos Acumulados", "$2,567,173,390", "$4,291,164,672",],
+          ["Coeficiente", "0.02", "$0.02",],
+        ] 
+      }
       
     };
   },

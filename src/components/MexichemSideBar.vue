@@ -2,7 +2,8 @@
   <div class="MexichemSideBar" style="padding-top:300;">
     <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
       <div class="sidebar-sticky">
-      
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>INFO</span></h6>      
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>Entidad</span></h6>
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"><span>Mes</span></h6>
       </div>
