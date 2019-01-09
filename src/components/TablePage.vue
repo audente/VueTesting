@@ -2,7 +2,7 @@
   <EYLayout :title="title">
     <template slot="SideBar"><MexichemSideBar></MexichemSideBar></template>
     <div id="TablePage">
-    <div class="row">
+      <div class="row">
         <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
@@ -15,7 +15,8 @@
                 <td>{{ msg }}</td>
               </tr>
             </tbody>
-        </table> 
+          </table> 
+        </div>
       </div>
     </div>
   </EYLayout>
