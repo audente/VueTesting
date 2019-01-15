@@ -34,11 +34,10 @@ export default {
   methods: {
     openChart: function (event) {
         this.$router.push({name:'chart'});
-    }
+    },
     openOpenfile: function (event) {
         this.$router.push({name:'openfile'});
-    }
-
+    },
   }
 };
 </script>
