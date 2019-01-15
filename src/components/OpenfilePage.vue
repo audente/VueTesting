@@ -29,11 +29,13 @@ methods: {
         this.contents = "Valid!"
       }
       alert('Clicked!');
-      var file = event.target.files[0];
-      this.contents = event.target.files;
       
+      var file = event.target.files[0];
+      this.contents = event.target;
       alert('File:'+file)
+      
       if (!file) {
+        this.contents = "NULL";
         return;
       }
       
