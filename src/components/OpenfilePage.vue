@@ -25,7 +25,7 @@ methods: {
     showContents: function (event) {
         alert('Load');
         this.contents = this.contents+": READ:" + event.target.result;
-    }
+    },
 
     readSingleFile: function (event) {
       
