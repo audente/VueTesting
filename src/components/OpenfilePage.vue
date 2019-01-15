@@ -22,6 +22,11 @@ export default {
 
 methods: {
 
+    showContents: function (event) {
+        alert('Load');
+        this.contents = this.contents+": READ:" + event.target.result;
+    }
+
     readSingleFile: function (event) {
       
       this.contents = "Clicked!"
@@ -41,17 +46,18 @@ methods: {
       this.contents = "Reading: " + f.name
       
       var reader = new FileReader();
+      reader.onload = showContents;
+    
       reader.onloadstart = function(e) {
+        alert('Start');
         this.contents = this.contents+": START:" + e.target.result;
       };
       reader.onloadend = function(e) {
+        alert('End');
         this.contents = this.contents+": END:" + e.target.result;
       };
-
-      reader.onload = function(e) {
-        this.contents = this.contents+": READ:" + e.target.result;
-      };
       reader.onerror = function(e) {
+        alert('Error');
         this.contents = this.contents+": ERROR:" + e.target.result;
       }
       
