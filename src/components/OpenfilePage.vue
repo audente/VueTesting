@@ -41,9 +41,19 @@ methods: {
       this.contents = "Reading: " + f.name
       
       var reader = new FileReader();
-      reader.onload = function(e) {
-        this.contents = e.target.result;
+      reader.onloadstart = function(e) {
+        this.contents = this.contents+": START:" + e.target.result;
       };
+      reader.onloadend = function(e) {
+        this.contents = this.contents+": END:" + e.target.result;
+      };
+
+      reader.onload = function(e) {
+        this.contents = this.contents+": READ:" + e.target.result;
+      };
+      reader.onerror = function(e) {
+        this.contents = this.contents+": ERROR:" + e.target.result;
+      }
       
       reader.readAsText(file);
     
