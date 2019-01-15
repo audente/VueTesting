@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      'contents': "Empty";
+      'contents': "Empty",
     };
   },
 
