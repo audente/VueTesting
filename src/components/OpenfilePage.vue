@@ -25,7 +25,7 @@ methods: {
     showContents: function (event) {
         alert('Load');
         this.contents = this.contents+": READ:" + event.target.result;
-    },
+    },       
 
     readSingleFile: function (event) {
       
@@ -46,7 +46,7 @@ methods: {
       this.contents = "Reading: " + f.name
       
       var reader = new FileReader();
-      reader.onload = showContents;
+      reader.onload = this.showContents;
     
       reader.onloadstart = function(e) {
         alert('Start');
