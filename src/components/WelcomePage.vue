@@ -7,6 +7,8 @@
       <p>{{ msg3 }}</p>
       <hr />
       <button type="button" class="btn btn-primary" @click="openChart">Chart</button>
+      <button type="button" class="btn btn-primary" @click="openOpenfile">Open File</button>
+
     </div>
   </EYLayout>
 </template>
@@ -33,6 +35,10 @@ export default {
     openChart: function (event) {
         this.$router.push({name:'chart'});
     }
+    openOpenfile: function (event) {
+        this.$router.push({name:'openfile'});
+    }
+
   }
 };
 </script>

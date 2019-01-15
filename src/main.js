@@ -12,6 +12,8 @@ import { store } from './Store'
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
 import ChartPage from "./components/ChartPage";
+import OpenfilePage from "./components/OpenfilePage";
+
 
 Vue.use(VueRouter);
 Vue.use(VueFeatherIcon);
@@ -24,6 +26,8 @@ const router = new VueRouter({
     { name:'login',   path: '/',        component: LoginPage,   props: {title: title}, },
     { name:'welcome', path: '/welcome', component: WelcomePage, props: {title: title}, },
     { name:'chart',   path: '/chart',   component: ChartPage,   props: {title: title}, },
+    { name:'openfile',path: '/openfile', component: OpenfilePage,   props: {title: title}, },
+
   ]
 })
 
