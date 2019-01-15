@@ -30,14 +30,15 @@ methods: {
       }
       alert('Clicked!');
       
-      var file = event.target.files[0];
-      this.contents = event.target;
-      alert('File:'+file)
+      var f = event.target.files[0];
+      this.contents = "Selected: " + f.name;
+      alert('File: '+f.name+' - '+f.size+' bytes')
       
-      if (!file) {
+      if (!f) {
         this.contents = "NULL";
         return;
       }
+      this.contents = "Reading: " + f.name
       
       var reader = new FileReader();
       reader.onload = function(e) {
