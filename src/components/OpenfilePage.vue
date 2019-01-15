@@ -25,6 +25,9 @@ methods: {
     readSingleFile: function (event) {
       
       this.contents = "Clicked!"
+      if (window.file && window.FileReader && window.Blob ) {
+        this.contents = "Valid!"
+      }
       alert('Clicked!');
       var file = event.target.files[0];
       this.contents = event.target.files;
