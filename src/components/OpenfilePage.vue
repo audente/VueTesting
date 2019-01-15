@@ -1,9 +1,9 @@
 <template>
   <div id="OpenfilePage">
     <h3>Select File:</h3>
-    <input type="file" id="file-input" @change="readSingleFile"/>
+    <input type="file" id="fileinput" @change="readSingleFile"/>
     <h3>Contents of the file:</h3>
-    <pre :id="file-content">{{ contents }}</pre>
+    <pre :id="filecontent">{{ contents }}</pre>
   </div>
 </template>
 
@@ -23,16 +23,22 @@ export default {
 methods: {
 
     readSingleFile: function (event) {
+      
+      this.contents = "Clicked!"
       alert('Clicked!');
       var file = event.target.files[0];
+      this.contents = event.target.files;
+      
       alert('File:'+file)
       if (!file) {
         return;
       }
+      
       var reader = new FileReader();
       reader.onload = function(e) {
         this.contents = e.target.result;
       };
+      
       reader.readAsText(file);
     
     },
