@@ -55,7 +55,7 @@ methods: {
         this.contents = this.contents+": ERROR:" + e.target.result;
       }
       
-      reader.readAsText(file);
+      reader.readAsText(f);
     
     },
   },
